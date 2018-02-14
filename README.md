@@ -1,1 +1,1 @@
-# react-native-notetaker
+# react-native-plus-redux
