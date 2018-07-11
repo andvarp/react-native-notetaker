@@ -20,6 +20,8 @@ export const passwordChanged = (text) => {
 };
 
 export const loginUser = ({ email, password }) => {
-  firebase.auth().singInWithEmailAndPassword(email, password)
-    .then(user => console.log(user));
+  return (dispatch) => {
+    firebase.auth().singInWithEmailAndPassword(email, password)
+      .then(user => console.log(user));
+  };  
 };
